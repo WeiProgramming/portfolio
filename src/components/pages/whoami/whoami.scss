@@ -1,0 +1,36 @@
+.about {
+    background-color: #000;
+    color: #fff;
+    padding: 3%;
+    position: absolute;
+    top: 0;
+
+    transition: all .5s ease-in-out;
+    z-index: 20;
+    right: 0;
+    height: 90%;
+    overflow-y: scroll;
+    width: 30%;
+
+    .about-container {
+        button {
+            cursor: pointer;
+                background-color: transparent;
+                color: #fff;
+                outline: none;
+                /* Remove default outline */
+                border: none;
+                /* Remove default border */
+                border-radius: 5px;
+                /* Rounded corners */
+
+            > * {
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+.container-slide {
+    right: -100%;
+}
