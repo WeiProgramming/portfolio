@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio-react/static/css/main.e2b770b5.css",
+    "main.js": "/portfolio-react/static/js/main.442d67a5.js",
+    "static/js/787.986acbe6.chunk.js": "/portfolio-react/static/js/787.986acbe6.chunk.js",
+    "static/media/rightdev-home.PNG": "/portfolio-react/static/media/rightdev-home.a6fd2a90441b383161d4.PNG",
+    "static/media/costcoauto-home.PNG": "/portfolio-react/static/media/costcoauto-home.691765cda9ab9b1304ef.PNG",
+    "static/media/johnshipp-homecap.PNG": "/portfolio-react/static/media/johnshipp-homecap.332d6fe2054ca652f72c.PNG",
+    "static/media/giftcash-home.PNG": "/portfolio-react/static/media/giftcash-home.e0ea4afe59ce3324d427.PNG",
+    "static/media/background-purple2.jpg": "/portfolio-react/static/media/background-purple2.0de0675c1f13e1fe1d7b.jpg",
+    "static/media/background-purple.jpg": "/portfolio-react/static/media/background-purple.6d9e41fefebf01fcfb52.jpg",
+    "static/media/swiftchange-home.PNG": "/portfolio-react/static/media/swiftchange-home.dac9052e714db8e0ffee.PNG",
+    "static/media/paymentlink-home.PNG": "/portfolio-react/static/media/paymentlink-home.392b9c3887f7e28100e3.PNG",
+    "static/media/patient-partner-logo.svg": "/portfolio-react/static/media/patient-partner-logo.82c1048ddc3b9355cc8e8c50e164afa5.svg",
+    "static/media/cap-logo.png": "/portfolio-react/static/media/cap-logo.3eca815d2f9f42182d49.png",
+    "static/media/paymentlink-logo.svg": "/portfolio-react/static/media/paymentlink-logo.05f742b9037fb5550515eed37b588678.svg",
+    "index.html": "/portfolio-react/index.html",
+    "main.e2b770b5.css.map": "/portfolio-react/static/css/main.e2b770b5.css.map",
+    "main.442d67a5.js.map": "/portfolio-react/static/js/main.442d67a5.js.map",
+    "787.986acbe6.chunk.js.map": "/portfolio-react/static/js/787.986acbe6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2b770b5.css",
+    "static/js/main.442d67a5.js"
+  ]
+}
