@@ -42,11 +42,11 @@ function App() {
           <img src={hero} alt="hero"/>
           <div className='img-overlay'></div>
           <div className='hero-block'>
-            <h1 className='mb-4'>Welcome to my Page!</h1>
+            <h1 className='mb-4 text-center lg:text-left'>Welcome to my Page!</h1>
             <div className='btn-group flex flex-col lg:flex-row'>
-              <button className="w-full lg:w-1/4" onClick={() => scrollToSection()}>Work</button>
-              <button className="w-full lg:w-1/4" onClick={() => {toggleSlide(); freezePage()}}>Whoami</button>
-              <button className="w-full lg:w-1/4">Contact</button>
+              <button className="w-full lg:w-1/4 mb-2" onClick={() => scrollToSection()}>Work</button>
+              <button className="w-full lg:w-1/4 mb-2" onClick={() => {toggleSlide(); freezePage()}}>Whoami</button>
+              <button className="w-full lg:w-1/4 mb-2">Contact</button>
             </div>
           </div>
         </div>

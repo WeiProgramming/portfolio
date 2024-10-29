@@ -9,7 +9,6 @@ import pl from './../../../assets/paymentlink-logo.svg'
 import js from './../../../assets/johnshipp-home.png'
 import pbg2 from './../../../assets/background-purple2.jpg'
 
-
 import caphome from './../../../assets/costcoauto-home.PNG'
 import rdhome from './../../../assets/rightdev-home.PNG'
 import gchome from './../../../assets/giftcash-home.PNG'
@@ -17,6 +16,8 @@ import schome from './../../../assets/swiftchange-home.PNG'
 
 import jshome from './../../../assets/johnshipp-homecap.PNG'
 import plhome from './../../../assets/paymentlink-home.PNG'
+
+import blob from '../../../assets/pattern1.svg'
 
 
 const WorkPageComponent = forwardRef((props, ref) => {
@@ -114,7 +115,7 @@ const WorkPageComponent = forwardRef((props, ref) => {
             <div className='work-details-container flex flex-col'>
                 <div className='work-block flex flex-col-reverse lg:flex-row'>
                     <div className='work-description w-full lg:w-1/2'>
-                        <h2 className='text-xl font-bold'>Costco Auto Program</h2>
+                        <h2 className='text-xl font-bold mb-4'>Costco Auto Program</h2>
                         <p>Software Engineer -
                             Worked on company's internal and external web applications through the .Net stack
                         </p>
@@ -124,22 +125,24 @@ const WorkPageComponent = forwardRef((props, ref) => {
                             Technologies: Asp.net, MSSqlServer, HTML5, CSS3, JQuery
                             </p>
                     </div>
-                    <div className='work-screencap w-full lg:w-2/4' 
+                    <div className='work-screencap w-full lg:w-2/4 relative' 
                     key={1} 
                     ref={(el) => retrieveEl(el)} 
                     onClick={(event) => {props.freezePage(); setCurrentImg(caphome); toggleShowWebCap(!webcap)}}>
                         <img src={caphome} alt="patient partner home screencap" />
+                        <div className='gradient-block lg:w-full lg:h-full absolute -top-9 -right-10 -z-10'></div>
                     </div>
                 </div>
-                <div className='work-block flex flex-col lg:flex-row'>
+                <div className='work-block flex flex-col lg:flex-row relative'>
                     <div className='work-screencap w-full lg:w-2/4' 
                     key={2} 
                     ref={(el) => retrieveEl(el)}
                     onClick={(event) => {props.freezePage(); setCurrentImg(rdhome); toggleShowWebCap(!webcap)}}>
                         <img src={rdhome} alt="patient partner home screencap" />
+                        <div className='gradient-block lg:w-full lg:h-full absolute top-9 right-10 -z-10'></div>
                     </div>
                     <div className='work-description w-full lg:w-1/2'>
-                        <h2 className='text-xl font-bold'>Patient Partner</h2>
+                        <h2 className='text-xl font-bold mb-4'>Patient Partner</h2>
                         <p>
                             Software Engineer -
                             Contributing in the development and refactor of web app codebase using PHP with the Laravel framework, 
@@ -149,13 +152,13 @@ const WorkPageComponent = forwardRef((props, ref) => {
                             including EC2 instances, RDS databases, and Route 53 configurations.
                         </p>
                         <p>
-                            Technologies:PHP, javascript, html, css, bootstrap, webpack, npm, SQL database, Trello Laravel: mix, routing, service providers, authentication, facade, middleware, migration
+                            Technologies: PHP, javascript, html, css, bootstrap, webpack, npm, SQL database, Trello Laravel: mix, routing, service providers, authentication, facade, middleware, migration
                         </p>
                     </div>
                 </div>
                 <div className='work-block flex flex-col-reverse lg:flex-row'>
                     <div className='work-description w-full lg:w-1/2'>
-                        <h2 className='text-xl font-bold'>Payment Link</h2>
+                        <h2 className='text-xl font-bold mb-4'>Payment Link</h2>
                         <p>Web developer -
                         Assisted in the development of testing software for payment-based clients 
                         to verify the functionality of their web tools. Collaborated closely with 
@@ -165,11 +168,12 @@ const WorkPageComponent = forwardRef((props, ref) => {
                             Technologies: Vuejs, html, css, Laravel, PHP, javascript
                         </p>
                     </div>
-                    <div className='work-screencap w-full lg:w-2/4' 
+                    <div className='work-screencap w-full lg:w-2/4 relative' 
                     key={5} 
                     ref={(el) => retrieveEl(el)}
                     onClick={(event) => {props.freezePage(); setCurrentImg(plhome); toggleShowWebCap(!webcap)}}>
                         <img src={plhome} alt="patient partner home screencap" />
+                        <div className='gradient-block lg:w-full lg:h-full absolute top-9 -right-10 -z-10'></div>
                     </div>
                 </div>
                 <div className='work-block flex flex-col lg:flex-row'>
@@ -178,9 +182,11 @@ const WorkPageComponent = forwardRef((props, ref) => {
                     ref={(el) => retrieveEl(el)}
                     onClick={(event) => {props.freezePage(); setCurrentImg(schome); toggleShowWebCap(!webcap)}}>
                         <img src={schome} alt="patient partner home screencap" />
+                        <div className='gradient-block lg:w-full lg:h-full absolute -top-9 right-10 -z-10'></div>
+
                     </div>
                     <div className='work-description w-full lg:w-1/2'>
-                        <h2 className='text-xl font-bold'>SwiftChange</h2>
+                        <h2 className='text-xl font-bold mb-4'>SwiftChange</h2>
                         <p>Software Engineer Intern</p>
                         <p>Collaborated with team members to develop new features and design and 
                             maintain SwiftChange's server and database. Implemented service provider 
@@ -191,7 +197,7 @@ const WorkPageComponent = forwardRef((props, ref) => {
                 </div>
                 <div className='work-block flex flex-col-reverse lg:flex-row'>
                     <div className='work-description w-full lg:w-1/2'>
-                        <h2 className='text-xl font-bold'>John Shipp & Associates</h2>
+                        <h2 className='text-xl font-bold mb-4'>John Shipp & Associates</h2>
                         <p>Full stack intern</p>
                         <p>Contributed to various web-based projects as requested by clients, 
                             participating in code reviews within an agile team environment. Collaborated 
@@ -199,7 +205,7 @@ const WorkPageComponent = forwardRef((props, ref) => {
                             quality.
                         </p>
 
-                        <p>1
+                        <p>
                             Technologies: Vuejs, html, css, Laravel, PHP, javascript
                         </p>
                     </div>
@@ -208,6 +214,8 @@ const WorkPageComponent = forwardRef((props, ref) => {
                     ref={(el) => retrieveEl(el)}
                     onClick={(event) => {props.freezePage(); setCurrentImg(jshome); toggleShowWebCap(!webcap)}}>
                         <img src={jshome} alt="patient partner home screencap" />
+                        <div className='gradient-block lg:w-full lg:h-full absolute -top-9 -right-10 -z-10'></div>
+
                     </div>
                 </div>
             </div>
