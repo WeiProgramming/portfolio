@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.85f0e72b.css",
-    "main.js": "/portfolio/static/js/main.61b08eca.js",
+    "main.css": "/portfolio/static/css/main.eceb17da.css",
+    "main.js": "/portfolio/static/js/main.a3aa5199.js",
     "static/js/787.986acbe6.chunk.js": "/portfolio/static/js/787.986acbe6.chunk.js",
     "static/media/rightdev-home.PNG": "/portfolio/static/media/rightdev-home.a6fd2a90441b383161d4.PNG",
     "static/media/costcoauto-home.PNG": "/portfolio/static/media/costcoauto-home.691765cda9ab9b1304ef.PNG",
@@ -14,13 +14,14 @@
     "static/media/patient-partner-logo.svg": "/portfolio/static/media/patient-partner-logo.82c1048ddc3b9355cc8e8c50e164afa5.svg",
     "static/media/cap-logo.png": "/portfolio/static/media/cap-logo.3eca815d2f9f42182d49.png",
     "static/media/paymentlink-logo.svg": "/portfolio/static/media/paymentlink-logo.05f742b9037fb5550515eed37b588678.svg",
+    "static/media/pattern1.svg": "/portfolio/static/media/pattern1.608d632fbae175119332188a1ec74baf.svg",
     "index.html": "/portfolio/index.html",
-    "main.85f0e72b.css.map": "/portfolio/static/css/main.85f0e72b.css.map",
-    "main.61b08eca.js.map": "/portfolio/static/js/main.61b08eca.js.map",
+    "main.eceb17da.css.map": "/portfolio/static/css/main.eceb17da.css.map",
+    "main.a3aa5199.js.map": "/portfolio/static/js/main.a3aa5199.js.map",
     "787.986acbe6.chunk.js.map": "/portfolio/static/js/787.986acbe6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85f0e72b.css",
-    "static/js/main.61b08eca.js"
+    "static/css/main.eceb17da.css",
+    "static/js/main.a3aa5199.js"
   ]
 }
