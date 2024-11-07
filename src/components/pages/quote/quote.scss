@@ -3,6 +3,8 @@
     background-image: url("../../../assets/gray-bg.jpg");
     background-size: cover;
     color: #BDAD98;
+    -webkit-box-shadow: inset 0px 8px 44px 50px rgba(0,0,0,0.64); 
+    box-shadow: inset 0px 8px 44px 50px rgba(0,0,0,0.64);
 
     .image-overlay {
         width: 100%;

@@ -89,10 +89,12 @@ const WorkPageComponent = forwardRef((props, ref) => {
 
     return (
         <div className='work' ref={ref}>
+            <div className={`image-overlay ${(freeze && webcap) ? 'z-50' : 'z-0'}`}></div>
             <div className='show-webcap' style={{display: (freeze && webcap) ? 'flex' : 'none'}} onClick={
                 () => {freezePage(); toggleShowWebCap(!webcap);}}>
                 <img src={caphome} ref={showImgRef}/>
             </div>
+            <div className='z-30 relative'>
             <div className='work-header'>
                 <h1 className='text-4xl font-bold text-white'>Portfolio</h1>
             </div>
@@ -108,6 +110,9 @@ const WorkPageComponent = forwardRef((props, ref) => {
                 </div>
                 <div className='logo-container'>
                     <img src={schome} alt="payment link logo"/>
+                </div>
+                <div className='logo-container'>
+                    <img src={plhome} alt="payment link logo"/>
                 </div>
                 <div className='logo-container'>
                     <img src={jshome} alt="payment link logo"/>
@@ -162,6 +167,45 @@ const WorkPageComponent = forwardRef((props, ref) => {
                 </div>
                 <div className='work-block flex flex-col-reverse lg:flex-row'>
                     <div className='work-description w-full lg:w-1/2'>
+                        <h2 className='text-xl font-bold mb-4'>Costco Auto Program</h2>
+                        <p>Software Engineer -
+                            Worked on company's internal and external web applications through the .Net stack
+                        </p>
+                        <p>Front End Developer -
+                            Participated in the design mock up and development of client facing websites</p>
+                            <p>
+                            Technologies: Asp.net, MSSqlServer, HTML5, CSS3, JQuery
+                            </p>
+                    </div>
+                    <div className='work-screencap w-full lg:w-2/4 relative' 
+                    key={1} 
+                    ref={(el) => retrieveEl(el)} 
+                    onClick={(event) => {props.freezePage(); setCurrentImg(sphome); toggleShowWebCap(!webcap)}}>
+                        <img src={sphome} alt="patient partner home screencap" />
+                        <div className='gradient-block lg:w-full lg:h-full absolute -top-9 -right-10 -z-10'></div>
+                    </div>
+                </div>
+                <div className='work-block flex flex-col lg:flex-row'>
+                    <div className='work-screencap w-full lg:w-2/4' 
+                    key={4} 
+                    ref={(el) => retrieveEl(el)}
+                    onClick={(event) => {props.freezePage(); setCurrentImg(schome); toggleShowWebCap(!webcap)}}>
+                        <img src={schome} alt="patient partner home screencap" />
+                        <div className='gradient-block lg:w-full lg:h-full absolute -top-9 right-10 -z-10'></div>
+
+                    </div>
+                    <div className='work-description w-full lg:w-1/2'>
+                        <h2 className='text-xl font-bold mb-4'>SwiftChange</h2>
+                        <p>Software Engineer Intern</p>
+                        <p>Collaborated with team members to develop new features and design and 
+                            maintain SwiftChange's server and database. Implemented service provider 
+                            APIs and conducted code documentation and code reviews to ensure quality 
+                            and consistency across the codebase.</p>
+                            <p>Technologies: REST Api, Laravel, Html, CSS, Reactjs</p>
+                    </div>
+                </div>
+                <div className='work-block flex flex-col-reverse lg:flex-row'>
+                    <div className='work-description w-full lg:w-1/2'>
                         <h2 className='text-xl font-bold mb-4'>Payment Link</h2>
                         <p>Web developer -
                         Assisted in the development of testing software for payment-based clients 
@@ -184,8 +228,8 @@ const WorkPageComponent = forwardRef((props, ref) => {
                     <div className='work-screencap w-full lg:w-2/4' 
                     key={4} 
                     ref={(el) => retrieveEl(el)}
-                    onClick={(event) => {props.freezePage(); setCurrentImg(schome); toggleShowWebCap(!webcap)}}>
-                        <img src={schome} alt="patient partner home screencap" />
+                    onClick={(event) => {props.freezePage(); setCurrentImg(promohome); toggleShowWebCap(!webcap)}}>
+                        <img src={promohome} alt="patient partner home screencap" />
                         <div className='gradient-block lg:w-full lg:h-full absolute -top-9 right-10 -z-10'></div>
 
                     </div>
@@ -222,6 +266,7 @@ const WorkPageComponent = forwardRef((props, ref) => {
 
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );

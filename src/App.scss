@@ -13,6 +13,7 @@
   .hero {
     overflow-x: hidden;
     position: relative;
+    
     .img-container {
       position: relative;
       .img-overlay {
@@ -21,6 +22,8 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.2);
         top: 0;
+        -webkit-box-shadow: inset 0px 8px 44px 28px rgba(0,0,0,0.64); 
+box-shadow: inset 0px 8px 44px 28px rgba(0,0,0,0.64);
       }
       img {
         width: 100%;

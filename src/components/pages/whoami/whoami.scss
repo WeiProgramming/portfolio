@@ -1,9 +1,18 @@
 .about {
     background-color: #7B7368;
     color: #BDAD98;
+    -webkit-box-shadow: inset 0px 50px 44px -8px rgba(0,0,0,0.64); 
+    box-shadow: inset 0px 50px 44px -8px rgba(0,0,0,0.64);
     ul {
-        color: #fff
+        color: #fff;
+
+        li {
+            margin-bottom: 5%;
+        }
     }
     .about-container {
+        h2 {
+            color: #F7D3A7;
+        }
     }
 }

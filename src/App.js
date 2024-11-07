@@ -13,10 +13,19 @@ import ContactPage from './components/pages/contact/contact.jsx';
 function App() {
   const [slide, setSlide] = useState(false);
   const [freeze, setFreeze] = useState(false);
-  const sectionRef = useRef(null);
+  const workRef = useRef(null);
+  const skillsRef = useRef(null);
+  const quoteRef = useRef(null);
+  const aboutRef = useRef(null);
+  const homeRef = useRef(null);
 
-  const scrollToSection = () => {
-    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+
+
+  const scrollToSection = (elRef = null) => {
+    if(elRef !== null) {
+      elRef.current.scrollIntoView({ behavior: 'smooth' });
+    } 
+    return
   };
   const freezePage = () => {
     setFreeze(prevFreeze => {
@@ -37,33 +46,42 @@ function App() {
 
   return (
     <div className="App relative ">
-      <NavComponent></NavComponent>
+      <NavComponent scroll={scrollToSection} refs={[homeRef,aboutRef,quoteRef,skillsRef,workRef]}></NavComponent>
       <ContactPage></ContactPage>
 
       {freeze ? 
         <div className='freeze-page-overlay' onClick={() => {freezePage(); toggleSlide()}}></div>
        : <div></div>}
       
-      <div className='hero shadow-2xl'>
+      <div className='hero shadow-2xl' ref={homeRef}>
         <div className='img-container relative'>
           <img src={hero} alt="hero"/>
           <div className='img-overlay'></div>
           <div className='hero-block text-left absolute top-72 right-0 w-2/4'>
-            <h1 className='text-2xl mb-4 capitalize'>Hi I'm Wei Leung</h1>
-            <p className='text-white mb-4 text-left lg:text-left text-7xl font-bold uppercase'>Welcome to my Page</p>
+            <h1 className='text-xl mb-4 capitalize'>Hi I'm Wei Leung</h1>
+            <p className='text-white mb-8 text-left lg:text-left text-7xl font-bold uppercase'>I'm a Dreamer</p>
             <div className='border-l-4 p-4'>
-              <h2 className='text-3xl font-bold capitalize mb-2'>USA</h2>
-              <p className="text-xl" >San Diego</p>
+              <h2 className='text-2xl font-bold capitalize mb-2'>USA</h2>
+              <p className="text-lg" >San Diego</p>
             </div>
             
           </div>
         </div>
       </div>
-      <WhoamiPage/>
-      <QuoteComponent></QuoteComponent>
-      <SkillsComponent></SkillsComponent>
+      <div ref={aboutRef}>
+          <WhoamiPage />
+      </div>
+      <div ref={quoteRef}>
+        <QuoteComponent ></QuoteComponent>
+      </div>
+      <div ref={skillsRef}>
+        <SkillsComponent  ></SkillsComponent>
+      </div>
+      <div ref={workRef}>
+        <WorkPageComponent ref={workRef} freezePage={freezePage} freeze={freeze}/>
+      </div>
 
-      <WorkPageComponent ref={sectionRef} freezePage={freezePage} freeze={freeze}/>
+      
     </div>
   );
 

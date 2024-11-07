@@ -17,7 +17,7 @@ function WhoamiPage() {
                         and team responsibilities are met.
                     </p>
                 </div>
-                <ul className="flex flex-row px-32 py-32 w-full justify-between items-center">
+                <ul className="flex px-32 py-32 w-full justify-between items-center flex-col lg:flex-row">
                     <li className='uppercase text-2xl font-bold'>
                         <img src={react_logo} alt="reactjs logo"/>
                         <p className='text-center'>ReactJS</p>

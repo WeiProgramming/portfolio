@@ -5,7 +5,7 @@ import './contact.scss'
 
 function ContactPage() {
     return (
-        <div className="contact absolute z-50 right-0 flex top-52 text-white">
+        <div className="contact fixed z-50 left-0 flex top-52 text-white">
             <div className="flex flex-row sticky">
                 <p className="text-2xl m-2">Follow Me</p>
                 <div className="logo text-4xl m-2">
