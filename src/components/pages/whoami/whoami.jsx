@@ -1,36 +1,44 @@
 import './whoami.scss';
-import { IoCloseSharp } from "react-icons/io5";
+import fb_logo from '../../../assets/firebase-logo.png';
+import kali_logo from '../../../assets/kali-logo.png';
+import laravel_logo from '../../../assets/laravel-logo.png';
+import node_logo from '../../../assets/nodejs-logo.png';
+import react_logo from '../../../assets/reactjs-logo.png';
 
-
-function WhoamiPage({slideState,toggleSlide,freezePage}){
+function WhoamiPage() {
     return (
-        <div className={`about ${!slideState ? 'container-slide' : ''}`}>
-            <div className="about-container">
-                <button onClick={() => {toggleSlide(); freezePage()}}><IoCloseSharp /></button>
-                <div>
-                    <p className='leading-7'>wei@kali[/home~$] whoami</p>
-                    <p className='leading-7'>
-                        wei@kali[/home~$] A passionate and curious person who loves exploring and discovering new things.
-                        Who work primarily with web based products from frontend frameworks to backend servers.
-                        I've recently taken an interest in cyber security so I've been scouring the web
-                        testing under various bug bounty programs.
-                        I’m also a proud cat owner, a self-proclaimed couch potato, and a quirky introvert.
-                        When I’m not glued to my computer, you can find me at parks, lakes, or beaches, enjoying a
-                        good hike and soaking up nature—because let’s be real, being cooped up all day isn’t great for
-                        anyone in tech!
-                    </p>
-
-                    <p className='leading-7'>wei@kali[/home~$] Throughout my time in the tech world, I’ve been lucky to work with some
-                        amazing developers and business owners on a bunch of cool projects across
-                        different industries, like medical devices, real estate, the auto industry,
-                        and fintech. I’ve experienced everything from the hustle of startup life in someone’s
-                        garage to working at mid-sized companies. I’m used to wearing many hats to get things done,
-                        and I love the challenge that comes with it!
+        <div className='about'>
+            <div className="about-container flex flex-col items-center justify-center">
+                <div className="w-2/4">
+                    <h2 className='capitalize text-center text-5xl py-16 font-bold'>About Me</h2>
+                    <p className='text-2xl text-center'>
+                        I'm a passionate software developer that excels in code optimization, scaling, and performance.
+                        I strive for clean code with an emphasis on security. I work and make sure requirements
+                        and team responsibilities are met.
                     </p>
                 </div>
-                {/* <div className='img-container'>
-                    <img src={selfie} alt="picture of me and my cat"/>
-                </div> */}
+                <ul className="flex flex-row px-32 py-32 w-full justify-between items-center">
+                    <li className='uppercase text-2xl font-bold'>
+                        <img src={react_logo} alt="reactjs logo"/>
+                        <p className='text-center'>ReactJS</p>
+                    </li>
+                    <li className='uppercase text-2xl font-bold'>
+                        <img src={node_logo} alt="nodejs logo"/>
+                        <p className='text-center'>NodeJS</p>
+                    </li>
+                    <li className='uppercase text-2xl font-bold'>
+                        <img src={laravel_logo} alt="laravel logo"/>
+                        <p className='text-center'>Laravel</p>
+                    </li>
+                    <li className='uppercase text-2xl font-bold'>
+                        <img src={fb_logo} alt="firebase logo"/>
+                        <p className='text-center'>Firebase</p>
+                    </li>
+                    <li className='uppercase text-2xl font-bold'>
+                        <img src={kali_logo} alt="kali logo"/>
+                        <p className='text-center'>Kali Suite</p>
+                    </li>
+                </ul>
             </div>
         </div>
     )

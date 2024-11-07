@@ -5,17 +5,15 @@ import './contact.scss'
 
 function ContactPage() {
     return (
-        <div className="contact">
-            <div className="contact-container">
-                <div className="social-media-grp">
-                    <div className="logo">
-                        <a href="https://github.com/WeiProgramming" ><FaGithub/></a>
-                    </div>
-                    <div className="logo">
-                        <a href="https://www.linkedin.com/in/wei-leung/" ><FaLinkedin/></a>
-                    </div>
+        <div className="contact absolute z-50 right-0 flex top-52 text-white">
+            <div className="flex flex-row sticky">
+                <p className="text-2xl m-2">Follow Me</p>
+                <div className="logo text-4xl m-2">
+                    <a href="https://github.com/WeiProgramming" ><FaGithub /></a>
                 </div>
-                <p>Designed by @Wei-2024</p>
+                <div className="logo text-4xl m-2">
+                    <a href="https://www.linkedin.com/in/wei-leung/" ><FaLinkedin /></a>
+                </div>
             </div>
         </div>
     )

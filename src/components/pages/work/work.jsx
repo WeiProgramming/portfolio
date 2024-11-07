@@ -1,5 +1,4 @@
 import React, {useState,useEffect, useRef, forwardRef} from 'react'
-import ContactPage from '../contact/contact'
 
 import './work.scss'
 import cap from './../../../assets/cap-logo.png'
@@ -10,9 +9,11 @@ import js from './../../../assets/johnshipp-home.png'
 import pbg2 from './../../../assets/background-purple2.jpg'
 
 import caphome from './../../../assets/costcoauto-home.PNG'
+import promohome from './../../../assets/costcoauto-promo.PNG'
 import rdhome from './../../../assets/rightdev-home.PNG'
 import gchome from './../../../assets/giftcash-home.PNG'
 import schome from './../../../assets/swiftchange-home.PNG'
+import sphome from './../../../assets/sp-home.PNG'
 
 import jshome from './../../../assets/johnshipp-homecap.PNG'
 import plhome from './../../../assets/paymentlink-home.PNG'
@@ -93,23 +94,26 @@ const WorkPageComponent = forwardRef((props, ref) => {
                 <img src={caphome} ref={showImgRef}/>
             </div>
             <div className='work-header'>
-                <h1 className='text-2xl font-bold'>Pleasure working with</h1>
+                <h1 className='text-4xl font-bold text-white'>Portfolio</h1>
             </div>
             <div className='logo-group'>
-                <div className='logo-container w-full lg:w-1/3'>
-                    <img src={cap} alt="costco auto program logo"/>
+                <div className='logo-container'>
+                    <img src={caphome} alt="costco auto program logo"/>
                 </div>
-                <div className='logo-container w-full lg:w-1/3'>
-                    <img src={pp} alt="patient partner logo" />
+                <div className='logo-container'>
+                    <img src={rdhome} alt="patient partner logo" />
                 </div>
-                <div className='logo-container w-full lg:w-1/3'>
-                    <img src={sp} alt="smart property logo" />
+                <div className='logo-container'>
+                    <img src={sphome} alt="smart property logo" />
                 </div>
-                <div className='logo-container w-full lg:w-1/3'>
-                    <img src={pl} alt="payment link logo"/>
+                <div className='logo-container'>
+                    <img src={schome} alt="payment link logo"/>
                 </div>
-                <div className='logo-container w-full lg:w-1/3'>
-                    <img src={js} alt="payment link logo"/>
+                <div className='logo-container'>
+                    <img src={jshome} alt="payment link logo"/>
+                </div>
+                <div className='logo-container'>
+                    <img src={promohome} alt="costco auto promo logo"/>
                 </div>
             </div>
             <div className='work-details-container flex flex-col'>
@@ -219,7 +223,6 @@ const WorkPageComponent = forwardRef((props, ref) => {
                     </div>
                 </div>
             </div>
-            <ContactPage/>
         </div>
     );
 });

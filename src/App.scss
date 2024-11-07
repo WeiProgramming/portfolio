@@ -24,20 +24,10 @@
       }
       img {
         width: 100%;
-        height: 80vh;
       }
       .hero-block {
-        position: absolute;
-        top: 20vh;
-        margin-left: 50%;
-        transform: translateX(-50%);
-        z-index: 5;
+        color: #f7d3a7;
 
-        h1 {
-          color: #C4C2C3;
-          font-size: 42px;
-          text-transform: uppercase;
-        }
 
         .btn-group {
           justify-content: space-evenly;
