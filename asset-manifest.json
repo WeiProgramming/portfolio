@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.eceb17da.css",
-    "main.js": "/portfolio/static/js/main.a3aa5199.js",
+    "main.css": "/portfolio/static/css/main.8f3f031f.css",
+    "main.js": "/portfolio/static/js/main.a7242a8f.js",
     "static/js/787.986acbe6.chunk.js": "/portfolio/static/js/787.986acbe6.chunk.js",
     "static/media/rightdev-home.PNG": "/portfolio/static/media/rightdev-home.a6fd2a90441b383161d4.PNG",
+    "static/media/costcoauto-promo.PNG": "/portfolio/static/media/costcoauto-promo.27dae9630534c1f45b7d.PNG",
     "static/media/costcoauto-home.PNG": "/portfolio/static/media/costcoauto-home.691765cda9ab9b1304ef.PNG",
+    "static/media/sp-home.PNG": "/portfolio/static/media/sp-home.82da752185c6d2cd9897.PNG",
     "static/media/johnshipp-homecap.PNG": "/portfolio/static/media/johnshipp-homecap.332d6fe2054ca652f72c.PNG",
     "static/media/giftcash-home.PNG": "/portfolio/static/media/giftcash-home.e0ea4afe59ce3324d427.PNG",
+    "static/media/gray-bg.jpg": "/portfolio/static/media/gray-bg.a379693a35b3f5714c32.jpg",
     "static/media/background-purple2.jpg": "/portfolio/static/media/background-purple2.0de0675c1f13e1fe1d7b.jpg",
-    "static/media/background-purple.jpg": "/portfolio/static/media/background-purple.6d9e41fefebf01fcfb52.jpg",
+    "static/media/lifestyle_me.jpg": "/portfolio/static/media/lifestyle_me.f774a112251ab8374267.jpg",
     "static/media/swiftchange-home.PNG": "/portfolio/static/media/swiftchange-home.dac9052e714db8e0ffee.PNG",
     "static/media/paymentlink-home.PNG": "/portfolio/static/media/paymentlink-home.392b9c3887f7e28100e3.PNG",
+    "static/media/kali-logo.png": "/portfolio/static/media/kali-logo.b073e32c43186c08dc39.png",
     "static/media/patient-partner-logo.svg": "/portfolio/static/media/patient-partner-logo.82c1048ddc3b9355cc8e8c50e164afa5.svg",
+    "static/media/reactjs-logo.png": "/portfolio/static/media/reactjs-logo.3b5049ea7908e9da3ba0.png",
     "static/media/cap-logo.png": "/portfolio/static/media/cap-logo.3eca815d2f9f42182d49.png",
     "static/media/paymentlink-logo.svg": "/portfolio/static/media/paymentlink-logo.05f742b9037fb5550515eed37b588678.svg",
     "static/media/pattern1.svg": "/portfolio/static/media/pattern1.608d632fbae175119332188a1ec74baf.svg",
     "index.html": "/portfolio/index.html",
-    "main.eceb17da.css.map": "/portfolio/static/css/main.eceb17da.css.map",
-    "main.a3aa5199.js.map": "/portfolio/static/js/main.a3aa5199.js.map",
+    "main.8f3f031f.css.map": "/portfolio/static/css/main.8f3f031f.css.map",
+    "main.a7242a8f.js.map": "/portfolio/static/js/main.a7242a8f.js.map",
     "787.986acbe6.chunk.js.map": "/portfolio/static/js/787.986acbe6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eceb17da.css",
-    "static/js/main.a3aa5199.js"
+    "static/css/main.8f3f031f.css",
+    "static/js/main.a7242a8f.js"
   ]
 }
