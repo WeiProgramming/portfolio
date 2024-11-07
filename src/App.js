@@ -59,7 +59,7 @@ function App() {
           <div className='img-overlay'></div>
           <div className='hero-block text-left absolute top-72 right-0 w-2/4'>
             <h1 className='text-xl mb-4 capitalize'>Hi I'm Wei Leung</h1>
-            <p className='text-white mb-8 text-left lg:text-left text-7xl font-bold uppercase'>I'm a Dreamer</p>
+            <p className='text-white mb-8 text-left lg:text-left text-7xl font-bold uppercase'>I Love To Create</p>
             <div className='border-l-4 p-4'>
               <h2 className='text-2xl font-bold capitalize mb-2'>USA</h2>
               <p className="text-lg" >San Diego</p>
