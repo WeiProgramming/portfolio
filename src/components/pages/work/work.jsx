@@ -167,7 +167,7 @@ const WorkPageComponent = forwardRef((props, ref) => {
                 </div>
                 <div className='work-block flex flex-col-reverse lg:flex-row'>
                     <div className='work-description w-full lg:w-1/2'>
-                        <h2 className='text-xl font-bold mb-4'>Costco Auto Program</h2>
+                        <h2 className='text-xl font-bold mb-4'>SmartProperty</h2>
                         <p>Software Engineer -
                             Worked on company's internal and external web applications through the .Net stack
                         </p>
@@ -234,7 +234,7 @@ const WorkPageComponent = forwardRef((props, ref) => {
 
                     </div>
                     <div className='work-description w-full lg:w-1/2'>
-                        <h2 className='text-xl font-bold mb-4'>SwiftChange</h2>
+                        <h2 className='text-xl font-bold mb-4'>Costco Auto Program Promotions</h2>
                         <p>Software Engineer Intern</p>
                         <p>Collaborated with team members to develop new features and design and 
                             maintain SwiftChange's server and database. Implemented service provider 

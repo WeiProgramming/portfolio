@@ -1,4 +1,4 @@
-import React, {useState,useRef} from 'react';
+import React, {useState,useRef, useEffect} from 'react';
 import './index.css';
 import './App.scss';
 import WorkPageComponent from './components/pages/work/work.jsx'
@@ -13,13 +13,14 @@ import ContactPage from './components/pages/contact/contact.jsx';
 function App() {
   const [slide, setSlide] = useState(false);
   const [freeze, setFreeze] = useState(false);
+  const [hobbyWord, setHobbyWord] = useState("");
   const workRef = useRef(null);
   const skillsRef = useRef(null);
   const quoteRef = useRef(null);
   const aboutRef = useRef(null);
   const homeRef = useRef(null);
 
-
+  let hobbyList = ["Create", "Dream", "Learn", "Explore", "Build", "Live"];
 
   const scrollToSection = (elRef = null) => {
     if(elRef !== null) {
@@ -43,6 +44,21 @@ function App() {
     setSlide(prevSlide => !prevSlide);
   }
 
+  useEffect(() => {
+    let index = 0;
+
+    const intervalId = setInterval(() => {
+      setHobbyWord(hobbyList[index]);
+      console.log('current hobby word:', hobbyList[index]);
+
+      index += 1;
+      if (index === hobbyList.length) {
+        index = 0
+      }
+    }, 2000);
+
+    return () => clearInterval(intervalId); // Cleanup on unmount
+  },[])
 
   return (
     <div className="App relative ">
@@ -59,7 +75,7 @@ function App() {
           <div className='img-overlay'></div>
           <div className='hero-block text-left absolute top-72 right-0 w-2/4'>
             <h1 className='text-xl mb-4 capitalize'>Hi I'm Wei Leung</h1>
-            <p className='text-white mb-8 text-left lg:text-left text-7xl font-bold uppercase'>I Love To Create</p>
+            <p className='text-white mb-8 text-left lg:text-left text-7xl font-bold uppercase'>I Love To {hobbyWord}</p>
             <div className='border-l-4 p-4'>
               <h2 className='text-2xl font-bold capitalize mb-2'>USA</h2>
               <p className="text-lg" >San Diego</p>

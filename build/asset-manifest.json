@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.48f30362.css",
-    "main.js": "/portfolio/static/js/main.ae37ed26.js",
+    "main.js": "/portfolio/static/js/main.58364ae1.js",
     "static/js/787.986acbe6.chunk.js": "/portfolio/static/js/787.986acbe6.chunk.js",
     "static/media/rightdev-home.PNG": "/portfolio/static/media/rightdev-home.a6fd2a90441b383161d4.PNG",
     "static/media/costcoauto-promo.PNG": "/portfolio/static/media/costcoauto-promo.27dae9630534c1f45b7d.PNG",
@@ -23,11 +23,11 @@
     "static/media/pattern1.svg": "/portfolio/static/media/pattern1.608d632fbae175119332188a1ec74baf.svg",
     "index.html": "/portfolio/index.html",
     "main.48f30362.css.map": "/portfolio/static/css/main.48f30362.css.map",
-    "main.ae37ed26.js.map": "/portfolio/static/js/main.ae37ed26.js.map",
+    "main.58364ae1.js.map": "/portfolio/static/js/main.58364ae1.js.map",
     "787.986acbe6.chunk.js.map": "/portfolio/static/js/787.986acbe6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.48f30362.css",
-    "static/js/main.ae37ed26.js"
+    "static/js/main.58364ae1.js"
   ]
 }
