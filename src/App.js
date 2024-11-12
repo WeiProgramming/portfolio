@@ -14,6 +14,8 @@ function App() {
   const [slide, setSlide] = useState(false);
   const [freeze, setFreeze] = useState(false);
   const [hobbyWord, setHobbyWord] = useState("");
+  const [currentWord, setCurrentWord] = useState("");
+  const [letterIndex, setLetterIndex] = useState(0);
   const workRef = useRef(null);
   const skillsRef = useRef(null);
   const quoteRef = useRef(null);
@@ -49,16 +51,32 @@ function App() {
 
     const intervalId = setInterval(() => {
       setHobbyWord(hobbyList[index]);
-      console.log('current hobby word:', hobbyList[index]);
-
+      setLetterIndex(0);
+      setCurrentWord("");
       index += 1;
       if (index === hobbyList.length) {
         index = 0
       }
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(intervalId); // Cleanup on unmount
   },[])
+
+  useEffect(() => {
+    const letterIntervalId = setInterval(() => {
+      
+      if (letterIndex == hobbyWord.length) { 
+        return () => {}
+      } else {
+        setCurrentWord((prevWord) => {
+          let new_word = prevWord + hobbyWord[letterIndex];
+          return new_word;
+        })
+        setLetterIndex((prev) => prev += 1);
+      }
+    }, 300);
+    return () => clearInterval(letterIntervalId); // Cleanup on unmount
+  }, [hobbyWord, currentWord])
 
   return (
     <div className="App relative ">
@@ -75,7 +93,7 @@ function App() {
           <div className='img-overlay'></div>
           <div className='hero-block text-left absolute top-72 right-0 w-2/4'>
             <h1 className='text-xl mb-4 capitalize'>Hi I'm Wei Leung</h1>
-            <p className='text-white mb-8 text-left lg:text-left text-7xl font-bold uppercase'>I Love To {hobbyWord}</p>
+            <p className='text-white mb-8 text-left lg:text-left text-7xl font-bold uppercase'>I Love To {currentWord}</p>
             <div className='border-l-4 p-4'>
               <h2 className='text-2xl font-bold capitalize mb-2'>USA</h2>
               <p className="text-lg" >San Diego</p>
