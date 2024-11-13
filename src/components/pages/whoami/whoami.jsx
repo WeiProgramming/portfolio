@@ -18,23 +18,23 @@ function WhoamiPage() {
                     </p>
                 </div>
                 <ul className="flex px-32 py-32 w-full justify-between items-center flex-col lg:flex-row">
-                    <li className='uppercase text-2xl font-bold'>
+                    <li className='uppercase text-xl font-bold'>
                         <img src={react_logo} alt="reactjs logo"/>
                         <p className='text-center'>ReactJS</p>
                     </li>
-                    <li className='uppercase text-2xl font-bold'>
+                    <li className='uppercase text-xl font-bold'>
                         <img src={node_logo} alt="nodejs logo"/>
                         <p className='text-center'>NodeJS</p>
                     </li>
-                    <li className='uppercase text-2xl font-bold'>
+                    <li className='uppercase text-xl font-bold'>
                         <img src={laravel_logo} alt="laravel logo"/>
                         <p className='text-center'>Laravel</p>
                     </li>
-                    <li className='uppercase text-2xl font-bold'>
+                    <li className='uppercase text-xl font-bold'>
                         <img src={fb_logo} alt="firebase logo"/>
                         <p className='text-center'>Firebase</p>
                     </li>
-                    <li className='uppercase text-2xl font-bold'>
+                    <li className='uppercase text-xl font-bold'>
                         <img src={kali_logo} alt="kali logo"/>
                         <p className='text-center'>Kali Suite</p>
                     </li>

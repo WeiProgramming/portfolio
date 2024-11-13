@@ -91,7 +91,7 @@ function App() {
         <div className='img-container relative'>
           <img src={hero} alt="hero"/>
           <div className='img-overlay'></div>
-          <div className='hero-block text-left absolute top-72 right-0 w-2/4'>
+          <div className='hero-block text-left absolute top-72 right-0 w-2/4 max-md:hidden'>
             <h1 className='text-xl mb-4 capitalize'>Hi I'm Wei Leung</h1>
             <p className='text-white mb-8 text-left lg:text-left text-7xl font-bold uppercase'>
               I Love To {currentWord} <span className='animate-ping text-7xl'>|</span>

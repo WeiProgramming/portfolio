@@ -88,7 +88,7 @@ const WorkPageComponent = forwardRef((props, ref) => {
 
 
     return (
-        <div className='work' ref={ref}>
+        <div className='work bg-fixed' ref={ref}>
             <div className={`image-overlay ${(freeze && webcap) ? 'z-50' : 'z-0'}`}></div>
             <div className='show-webcap' style={{display: (freeze && webcap) ? 'flex' : 'none'}} onClick={
                 () => {freezePage(); toggleShowWebCap(!webcap);}}>
